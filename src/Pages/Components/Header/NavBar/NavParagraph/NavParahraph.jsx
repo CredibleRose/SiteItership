@@ -9,13 +9,10 @@ const NavParagraph =(props) => {
     }
     return(
         <button className={Paragraph.NavParagraph} onClick={ kek } >
-        {/*<NavLink to = {props.punkt}>*/}
             {console.log(selectpunktik)}
                 <li className = {Paragraph.IdialPdaragraph}>
                     {props.punkt}
                 </li>
-
-    {/*</NavLink>*/}
         </button>
     )
 }
