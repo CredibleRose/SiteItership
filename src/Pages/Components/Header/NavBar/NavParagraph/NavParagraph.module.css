@@ -1,0 +1,50 @@
+hr.Paragraph {
+    display: inline; /*Отображать как строчный элемент */
+    margin-top: 10px; /*Отступ сверху */
+    margin-left: 10px; /*Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /*Поля вокруг текста */
+    position: static;
+
+}
+
+/* Частые */
+li.IdialPdaragraph {
+    display: inline; /*Отображать как строчный элемент */
+    width: 28px;
+    height: 20px;
+    left: 12px;
+    top: 8px;
+
+    /* Text Semibold */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    text-align: center;
+
+    /* [Light] Text / Primary */
+    color: #050510;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 6px;
+}
+button.NavParagraph {
+    display: inline; /*Отображать как строчный элемент */
+    margin-top: 32px; /*Отступ сверху */
+    margin-left: 10px; /*Отступ слева */
+    border: 0px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /*Поля вокруг текста */
+    background-color: #FFFFFF;
+}
+button.NavParagraph:active {
+    color: crimson;
+}
+
+

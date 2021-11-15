@@ -1,0 +1,38 @@
+   ul.chelik li {
+    /*display: inline; /* Отображать как строчный элемент */
+    margin-top: 5px; /* Отступ сверху */
+    margin-right: 2px; /* Отступ слева */
+    /*border: 1px solid #000; /* Рамка вокруг текста */
+    font-size: 16px;
+       list-style-type: none;
+       text-decoration:none;
+   }
+   ul.chelik li img {
+       border-radius: 90%;
+       margin-right: 0px ;
+      width: 72px;
+      height: 72px;
+       left: 0px;
+       top: calc(50% - 72px/2);
+   }
+   ul.chelik Nav {
+       list-style-type: none;
+       text-decoration: none;
+   }
+   ul.chelik li div {
+       position: static;
+       display: inline;
+       margin-left: 3px;
+   }
+   ul.chelik li p {
+       display: inline;
+       margin-left: 3px;
+       margin-top: 10px;
+   }
+   div.name {
+
+       color: #050510;
+   }
+   div.position {
+       overflow-wrap: anywhere;
+   }

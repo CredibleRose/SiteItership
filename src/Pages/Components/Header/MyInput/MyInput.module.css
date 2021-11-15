@@ -1,0 +1,24 @@
+input.poisk {
+    /*margin-left: 10px; /* Отступ слева */
+    /* background: #F7F7F8;*/
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start;
+    /*padding: 8px 12px;*/
+    border: 0px;
+    outline: 0;
+    outline-offset: 0;
+
+    /*position: absolute;*/
+    margin-left: 10px;
+    width:1000px;
+    height: 30px;
+    left: 16px;
+    right: 16px;
+    /*top: calc(50% - 40px/2);*/
+
+    /* [Light] BG / Secondary */
+
+    background: #F7F7F8;
+    border-radius: 16px;
+}

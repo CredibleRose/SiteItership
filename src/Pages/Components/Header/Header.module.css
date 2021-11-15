@@ -1,0 +1,253 @@
+body.poisk {
+  /*margin-left: 10px; /* Отступ слева */
+   /* background: #F7F7F8;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+
+    /*position: absolute;*/
+    height: 30px;
+    left: 16px;
+    right: 16px;
+    /*top: calc(50% - 40px/2);*/
+
+    /* [Light] BG / Secondary */
+
+    background: #F7F7F8;
+    border-radius: 16px;
+ }
+form.poisk {
+    /*margin-left: 10px; /* Отступ слева */
+    /* background: #F7F7F8;*/
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    /*position: absolute;*/
+    height: 30px;
+    left: 16px;
+    right: 16px;
+    /*top: calc(50% - 40px/2);*/
+
+    /* [Light] BG / Secondary */
+
+    background: #F7F7F8;
+    border-radius: 16px;
+}
+div.SerchText{
+    display: inline;
+    position: static;
+    width: 76px;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+
+    /* Title 1 Bold */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+
+    /* [Light] Text / Primary */
+
+    color: #050510;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 2px;
+}
+header.top {
+   /*background-color: rgb(164, 197, 175);*/
+    border-bottom: 0.33px solid grey;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    padding: 0px;
+
+    /position: absolute;
+    height: 152px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+ }
+header.topProfile {
+  /*background-color: rgb(34, 182, 83);*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    /*width: 1920px;*/
+    height: 280px;
+    left: 0px;
+    top: 0px;
+
+    /* [Light] BG / Secondary */
+
+    background: #F7F7F8;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+div.ProfAll {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+div.Prof {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    color: #050510;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+}
+div.Proftag {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    color: #97979B;
+    width: 14px;
+    height: 22px;
+    left: calc(50% - 14px/2);
+    top: 2px;
+
+    /* Title 3 Regular */
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height, or 129% */
+
+    align-items: center;
+    text-align: center;
+
+
+}
+div.Profpos {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    width: 55px;
+    height: 16px;
+    left: calc(50% - 55px/2);
+    top: 40px;
+
+    /* Caption 1 Regular */
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height, or 123% */
+
+    text-align: center;
+
+    /* [Light] Text / Secondary */
+
+    color: #55555C;
+}
+img.Prof {
+    border-radius: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 104px;
+    height: 104px;
+    left: 0px;
+    top: calc(50% - 72px/2);
+}
+div.ico::before{
+    font-family: 'FontAwesome';
+    content: '\f24e';
+}
+div.Profage {
+    display: inline;
+    position: absolute;
+    width: 61px;
+    height: 20px;
+    right: 4px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    color: #97979B;
+    text-align: right;
+}
+div.Profbirth {
+    display: inline;
+    position: static;
+    width: 98px;
+    height: 20px;
+    left: 0px;
+    top: calc(50% - 20px/2);
+
+    /* Headline Medium */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+div.ProfTele {
+    display: inline;
+    position: static;
+    width: 151px;
+    height: 20px;
+    left: 0px;
+    top: calc(50% - 20px/2);
+
+    /* Headline Medium */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    /*display: flex;*/
+    align-items: flex-end;
+
+    /* [Light] Text / Primary */
+
+    color: #050510;
+}
+img.ico{
+    display: inline;
+}
+
+
+
+

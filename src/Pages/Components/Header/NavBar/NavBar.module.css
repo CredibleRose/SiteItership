@@ -1,0 +1,13 @@
+ul.hr { 
+    margin: 0; /*Обнуляем значение отступов */
+    margin-top: 40px;
+    padding: 4px; /*Значение полей */
+    display: inline; /*Отображать как строчный элемент */
+    } 
+li.NavParagraph { 
+        display: inline; /*Отображать как строчный элемент */
+        margin-top: 20px; /*Отступ сверху */
+        margin-left: 10px; /*Отступ слева */
+       border: 1px solid #000; /* Рамка вокруг текста */
+        padding: 3px; /*Поля вокруг текста */
+}
