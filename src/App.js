@@ -25,7 +25,6 @@ const App = () => {
         setSelectedSort(sort)
     }
     const sortedProfs = useMemo(() => {
-        console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
         if(selectedSort){
             return [...cheliks].sort((a, b) => a[selectedSort].localeCompare(b[selectedSort]))
         }
