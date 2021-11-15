@@ -2,8 +2,7 @@ import React from 'react';
 import Navigator from './Header.module.css'
 import NavBar from './NavBar/NavBar'
 import Ico from '../../../Ico/Lupa.png'
-import MySelect from "./MySelect/MySelect";
-import MyInput from "./MyInput/MyInput";
+import ProfsFilter from "./ProfsFilter";
 
 const Header = (props) => {
 
@@ -14,19 +13,9 @@ const Header = (props) => {
 
             <form className={Navigator.poisk}>
                 <img className={Navigator.ico} src={Ico}/>
-                <MyInput value={props.valueSerch}
-                         onChange={props.onChangeSerch}
-                         placeholder="Поиск по сайту"/>
-
-                <MySelect
-                    onChange={props.onChange}
-                    value={props.value}
-                    defoultValue="Сортировка"
-                    option={[
-                        {value: "firstName", name: "По алфавиту"},
-                        {value: "birthday", name: "По возрасту"},
-                    ]}
-                />
+                <ProfsFilter filter = {props.filter}
+                             setFilter={props.setFilter}
+                             props = {props}/>
 
             </form>
 

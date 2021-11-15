@@ -6,7 +6,9 @@ const AllCheliks = (props) => {
 
   return (
     <div className="App">
-        <Header onChangeSerch = {props.onChangeSerch}
+        <Header filter = {props.filter}
+                setFilter = {props.setFilter}
+                onChangeSerch = {props.onChangeSerch}
                 valueSerch ={props.valueSerch}
                 onChange = {props.onCahnge}
                 value ={props.value}

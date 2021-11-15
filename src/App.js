@@ -4,45 +4,35 @@ import ProfileInfo from './Pages/ProfileInfo';
 import AllCheliks from './Pages/AllCheliks'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import axios from "axios";
+import {useProfs} from "./Hooks/useProfs";
+import ProfsService from "./API/ProfsService";
 
 const App = () => {
 
     const [cheliks, setChecliks] = useState([])
+    const [filter,setFilter] = useState({sort: '',query: ''})
+    const sortedsAndSerchedProfs = useProfs(cheliks, filter.sort, filter.query)
 
     const selectDepartment = (department) => {
         setChecliks([...cheliks].filter(ch => ch.department === department.toLowerCase()))
     }
     useEffect( () => {
-        fetch()
+        fetchCheliks()
     }, [])
-    async function fetch() {
-        const respone = await axios.get('https://stoplight.io/mocks/kode-education/trainee-test/25143926/users')
-        setChecliks(respone.data.items)
+    async function fetchCheliks() {
+        const cheliks = await ProfsService.getAll()
+        setChecliks(cheliks)
     }
-
-    const [selectedSort, setSelectedSort] =useState('')
-    const sortProfs =(sort) => {
-        setSelectedSort(sort)
-    }
-    const sortedProfs = useMemo(() => {
-        if(selectedSort){
-            return [...cheliks].sort((a, b) => a[selectedSort].localeCompare(b[selectedSort]))
-        }
-        return cheliks;
-    },[selectedSort,cheliks])
-    const [serchQuery, setSerchQuery] = useState('')
-    const sortedsAndSerchedProfs = useMemo(()=>{
-        return sortedProfs/*.filter(cheliks => cheliks.name.includes(serchQuery))*/
-    },[serchQuery,sortedProfs])
-
 
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<AllCheliks valueSerch ={serchQuery}
-                                                     onChangeSerch = {e => setSerchQuery(e.target.valueSerch)}
-                                                     value = {selectedSort}
-                                                     onCahnge = {sortProfs}
+                <Route path="/" element={<AllCheliks valueSerch ={filter.query}
+                                                     onChangeSerch = {e => setFilter({...filter, query: e.target.valueSerch})}
+                                                     value = {filter.sort}
+                                                     onCahnge = {selectedSort => setFilter ({...filter, sort: selectedSort})}
+                                                     filter ={filter}
+                                                     setFilter = {setFilter}
                                                      selectDepartment = {selectDepartment}
                                                      CheliksData = { sortedsAndSerchedProfs }/>}/>
                 <Route exact path={'/person/:id'} element={<ProfileInfo CheliksData = { cheliks } />}/>
