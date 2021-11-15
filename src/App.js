@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import React, {useEffect, useMemo, useState} from 'react';
 import './App.css';
 import ProfileInfo from './Pages/ProfileInfo';
 import AllCheliks from './Pages/AllCheliks'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Header from "./Pages/Components/Header/Header";
 import axios from "axios";
 
 const App = () => {

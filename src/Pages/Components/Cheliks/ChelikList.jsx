@@ -1,7 +1,5 @@
 import React from "react";
-import cheliki from './ChelikList.module.css'
 import Personal from './Personal/Personal'
-import selectPunkt from '../Header/NavBar/NavParagraph/NavParahraph'
 
 const ChelikList = (props) => {
 

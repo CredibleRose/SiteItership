@@ -2,7 +2,6 @@ import React from 'react';
 import Navigator from './Header.module.css'
 import NavBar from './NavBar/NavBar'
 import Ico from '../../../Ico/Lupa.png'
-import SortIco from '../../../Ico/Sort.png'
 import MySelect from "./MySelect/MySelect";
 import MyInput from "./MyInput/MyInput";
 

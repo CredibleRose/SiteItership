@@ -1,6 +1,5 @@
 import React from 'react';
 import Paragraph from './NavParagraph.module.css'
-import {NavLink} from "react-router-dom";
 
 const NavParagraph =(props) => {
     let selectpunktik = props.punkt

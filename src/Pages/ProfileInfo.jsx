@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Header from './Components/Header/HeaderProfile.jsx';
-import Div from './Components/Cheliks/ChelikList'
 import {useParams} from "react-router-dom";
 import HeaderProfile from "./Components/Header/HeaderProfile.jsx";
 import head from "./Components/Header/Header.module.css"
